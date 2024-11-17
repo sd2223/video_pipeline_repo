@@ -1,0 +1,10 @@
+google-api-core==2.22.0
+google-api-python-client==2.151.0
+google-auth==2.35.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.1
+googleapis-common-protos==1.65.0
+gspread==6.1.4
+oauthlib==3.2.2
+opencv-python==4.10.0.84
+requests-oauthlib==2.0.0

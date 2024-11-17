@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: video-ingestion-deployment
+spec:
+  replicas: 2  # Number of replicas (adjust based on load)
+  selector:
+    matchLabels:
+      app: video-ingestion-app
+  template:
+    metadata:
+      labels:
+        app: video-ingestion-app
+    spec:
+      containers:
+      - name: video-ingestion-container
+        image: 5ah1l/video-ingestion-service:latest  # Replace with your actual image tag if hosted on a registry like DockerHub or GCR.
+        ports:
+        - containerPort: 8080  # Adjust based on your app's port configuration.
+        imagePullPolicy: Always  # Ensure Kubernetes always pulls the latest version of the image
+        resources:
+          requests:
+            memory: "256Mi"   # Minimum memory requested
+            cpu: "500m"       # Minimum CPU requested (500 millicores = 0.5 CPU)
+          limits:
+            memory: "512Mi"   # Maximum memory allowed
+            cpu: "1000m"      # Maximum CPU allowed (1000 millicores = 1 CPU)
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS  # Example of passing environment variables (e.g., credentials path)
+          value: "/video-pipeline-app/src/video-ingestion-credentials.json"
