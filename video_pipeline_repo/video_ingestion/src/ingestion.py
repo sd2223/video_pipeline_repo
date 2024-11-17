@@ -96,7 +96,7 @@ class VideoIngestionService:
             while done is False:
                 status, done = downloader.next_chunk()
             file.seek(0)
-            output_path = original_file_name  # Use the original file name for saving
+            output_path = os.path.join('input_storage', original_file_name)
 
             with open(output_path, 'wb') as f:
                 f.write(file.getvalue())

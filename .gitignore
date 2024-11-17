@@ -1,0 +1,4 @@
+video_pipeline_repo\video_decoder\src\decoded_storage\
+video_pipeline_repo\video_decoder\src\storage\
+
+video_pipeline_repo\video_ingestion\src\input_storage\
