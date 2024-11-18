@@ -308,9 +308,9 @@ def main():
     # sheets_credentials_path = '/video-pipeline-app/src/video-metadata-credentials.json'  # Path to your Google Sheets service account key file
     # ingestion_drive_credentials_path = '/video-pipeline-app/src/video-output-credentials.json'
     
-    input_drive_credentials_path = 'video-ingestion-credentials.json'  # Path to your Google Drive service account key file
-    sheets_credentials_path = 'video-metadata-credentials.json' 
-    ingestion_drive_credentials_path = 'video-output-credentials.json'
+    input_drive_credentials_path = 'keys/video-ingestion-credentials.json'  # Path to your Google Drive service account key file
+    sheets_credentials_path = 'keys/video-metadata-credentials.json' 
+    ingestion_drive_credentials_path = 'keys/video-output-credentials.json'
 
     # The ID of the target Google Sheet (you can find this in the URL of the sheet)
     sheet_id = '1HV7aX8dA1F8Wu2b5NEinpzNHsz1jNrZghusR0pAnKNA'
