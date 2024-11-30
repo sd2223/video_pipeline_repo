@@ -4,3 +4,6 @@ video_pipeline_repo/video_decoder/src/keys/
 
 video_pipeline_repo/video_ingestion/src/input_storage/
 video_pipeline_repo/video_ingestion/src/keys/
+
+video_pipeline_repo/video_process/src/keys/
+video_pipeline_repo/video_process/src/processed_frames/
