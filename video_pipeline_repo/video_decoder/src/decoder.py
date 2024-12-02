@@ -146,7 +146,7 @@ class VideoDecoderService:
         process_service_url = "http://localhost:5001/process"  # Adjust the URL as needed
         
         # Default pipeline configuration for testing
-        pipeline_config = ['enhance', 'recognize_faces']
+        pipeline_config = ['enhance']
 
         payload = {
             "job_id": job_id,

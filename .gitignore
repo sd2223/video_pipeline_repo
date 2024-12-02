@@ -7,3 +7,9 @@ video_pipeline_repo/video_ingestion/src/keys/
 
 video_pipeline_repo/video_process/src/keys/
 video_pipeline_repo/video_process/src/processed_frames/
+
+video_pipeline_repo/video_encoder/src/encoder_output/
+
+video_pipeline_repo/enhancement/src/enhanced_frames/
+
+video_pipeline_repo/facial_rec/src/processed_frames/
